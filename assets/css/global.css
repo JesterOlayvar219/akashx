@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Onest";
+  src: url("../font/Onest/static/Onest-Regular.ttf") formant("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("../font/Onest/static/Onest-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.custom-gradient-border {
+  border: 1px solid transparent;
+  border-image: linear-gradient(to right, #d09c27, #fdf0a3, #e0b84e) 1;
+  border-radius: 6px;
+}
+
+.button-shadow {
+  box-shadow: -10px 30px 50px 0px rgba(253, 240, 163, 0.3);
+}
+
+.join {
+  background-image: url(../img/header/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 120px;
+}
+
+.video {
+  background: linear-gradient(
+    0deg,
+    rgba(13, 13, 13, 0) 0%,
+    rgba(13, 13, 13, 0.8) 70%,
+    rgba(13, 13, 13, 1) 100%
+  );
+}
+
+.trading {
+  /* background: rgb(112, 87, 47);
+  background: linear-gradient(
+    149deg,
+    rgba(112, 87, 47, 1) 24%,
+    rgba(10, 7, 2, 1) 65%,
+    rgba(5, 5, 5, 1) 100%
+  ); */
+  background-image: url(../img/trade/trade-bg.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.trading-card-grad1 {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(7, 7, 7, 0));
+  opacity: 0.1;
+}
+
+.trading-card-grad2 {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 1), rgba(7, 7, 7, 0));
+  opacity: 0.1;
+}

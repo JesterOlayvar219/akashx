@@ -9,9 +9,11 @@
 
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
+    <link rel="stylesheet" href="./assets/css/global.css" />
     <title>AKASHX</title>
   </head>
-  <body>
+  <body class="bg-black">
+    <!-- Navbar -->
     <header
       class="fixed top-0 w-full h-[157px] z-20 transition-all duration-150"
     >
@@ -50,13 +52,15 @@
       </div>
       <!-- Navbar2 Content -->
       <div
-        class="flex flex-row justify-between items-center w-full h-[109px] bg-black/60 space-x-[229.7px] px-16"
+        class="flex flex-row justify-between items-center w-full h-[109px] bg-black/45 backdrop-blur-[48px] border-b border-[#F6D78D]/10 space-x-[229.7px] px-16"
       >
         <img
           src="./assets/img/Navbar/logo.png"
           class="w-[173.86px] h-[43.08px]"
         />
-        <div class="flex flex-row justify-center items-center space-x-8">
+        <div
+          class="flex flex-row justify-center items-center space-x-8 text-white"
+        >
           <a>Home</a>
           <a>Trading Academy</a>
           <a>Affiliate Program</a>
@@ -64,13 +68,13 @@
         </div>
         <div class="flex flex-row items-center justify-center gap-4">
           <button
-            class="flex flex-row w-[155.36px] h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 space-x-[10px]"
+            class="flex flex-row w-[155.36px] h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 gap-[10px] button-shadow"
           >
             <span class="w-[6.36px] h-[6.36px] bg-[#040404] rounded-lg"></span>
             <p class="text-[18px] font-semibold">JOIN NOW</p>
           </button>
           <button
-            class="flex flex-row w-[119.36px] h-[61px] text-white rounded-md justify-center items-center p-6 space-x-[10px]"
+            class=" flex flex-row w-[119.36px] h-[61px] bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] text-transparent bg-clip-text custom-gradient-border justify-center items-center space-x-[10px]"
           >
             <span
               class="w-[6.36px] h-[6.36px] bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] rounded-lg"
@@ -80,6 +84,90 @@
         </div>
       </div>
     </header>
+    <!-- End of Navbar -->
+    <!-- Header -->
+    <div class="join flex justify-center relative">
+      <div
+        class="video flex w-[1140px] h-[544.83px] rounded-tl-3xl rounded-tr-3xl  px-[19.35px] pt-[19.35px] mt-[110px]"
+      >
+        <img
+          src="./assets/img/header/join.png"
+          class="w-[1101.3px] h-[526.34px]"
+        ></img>
+      </div>
+      <!-- Background effect (blur) -->
+      <div class=" flex flex-col w-full h-[1004px] bg-black rounded-full blur-3xl absolute top-[492px]">
+      </div>
+      <!-- button section -->
+      <div class="flex flex-col w-[796px] justify-center items-center absolute top-[481px]">  
+        <button class="flex flex-row w-[247px] h-10 rounded-full bg-[#1B1B1B]/10 border border-[#ffffff]/10 justify-between items-center px-4 py-2 gap-[10px]">
+          <img src="./assets/img/header/longGold.png" class="w-6 h-6"></img>
+          <span class="text-sm font-bold leading-[16.8px] tracking-widest text-[#EBBB29]">WELCOME TO AKASHX</span>
+        </button>
+        <p class="font-onest font-bold text-[80px] text-white text-center leading-[83.84px]">
+          Take your Trading To The Next Level
+        </p>
+        <button
+            class="flex flex-row w-[231.36px] h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 gap-[10px] button-shadow mt-8"
+          >
+            <span class="w-[6.36px] h-[6.36px] bg-[#040404] rounded-lg"></span>
+            <p class="text-[18px] font-semibold">JOIN NOW BUTTON</p>
+        </button>
+      </div>
+      <div></div>
+    </div>
+    <!-- End of Header -->
+    <!--elevating multifamily management-->
+    <section class="flex flex-col w-full h-[291.87px] border border-white py-20 px-16  absolute top-[997px] gap-16 items-center">
+      <p class="text-white text-2xl leading-[34.78px] font-bold font-onest">Elevating multifamily Management</p>
+      <div class="flex flex-row opacity-[24%] text-white font-onest font-semibold text-[41.05px] leading-[43.02px] gap-12">
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/dogecoin.png" class="w-[40.71px] h-[37.19px]" />
+          <span>Dogecoin</span>
+        </div>
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/xrp.png" class="w-[38.24px] h-[31.29px]" />
+          <span>XRP</span>
+        </div>
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/tether.png" class="w-[36.51px] h-[33.12px]"/>
+          <span>Tether</span>
+        </div>
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/forex.png" class="w-[50.87px] h-[50.87px]" />
+          <span>Forex</span>
+        </div>
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/ethereum.png" class="w-[26.1px] h-[42.8px]"/>
+          <span>Ethereum</span>
+        </div>
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/dogecoin.png" class="w-[40.71px] h-[37.19px]" />
+          <span>Dogecoin</span>
+        </div>
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/xrp.png" class="w-[38.24px] h-[31.29px]" />
+          <span>XRP</span>
+        </div>
+        <div class="flex flex-row items-center gap-6">
+          <img src="./assets/img/logo/tether.png" class="w-[36.51px] h-[33.12px]"/>
+          <span>Tether</span>
+        </div>
+      </div>
+    </section>
+    <!-- end of elevating multifamily management-->
+    <!-- Trading Academy -->
+    <section class="border border-red-900 pt-28 pb-8 px-16 mt-52">
+      <div class="trading border rounded-3xl h-64 relative">
+        <div class="trading-card-grad1  w-[291px] h-[570px] rounded-bl-3xl absolute bottom-0 left-0"></div>
+        <div class="trading-card-grad2  w-[291px] h-[570px] rounded-tr-3xl absolute bottom-0 left-[460px]">
+        </div>
+        <div class="flex flex-col w-[664px] justify-center items-center">
+          <h1 class="font-onest text-[64px] font-bold text-white leading-[67.07px]">Trading Academy</h1>
+          <p class="font-onest text-lg font-normal text-[#A3A3A3] leading-[26.08px] ">Get access to over 200+ pre-recorded micro-learning videos, Choose from beginner, advanced, expert, platform tutorials, and cryptocurrencies. You can also learn directly from our Educators. 18+ languages available!</p>
+        </div>
+      </div>
+    </section>
     <script src="./assets/js/global.js"></script>
   </body>
 </html>

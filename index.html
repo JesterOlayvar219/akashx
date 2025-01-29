@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Font preloads -->
+
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <title>AKASHX</title>
+  </head>
+  <body>
+    <header
+      class="fixed top-0 w-full h-[157px] z-20 transition-all duration-150"
+    >
+      <!-- Navbar1 Content -->
+      <div class="w-full h-12 relative overflow-hidden">
+        <video
+          autoplay
+          muted
+          loop
+          class="absolute top-0 left-0 w-full h-full object-cover"
+        >
+          <source src="./assets/img/navbar.mp4" type="video/mp4" />
+        </video>
+        <div
+          class="flex items-center justify-between h-full px-16 py-[9.08px] text-[14px] text-white bg-black/20 backdrop-blur-sm"
+        >
+          <div class="flex flex-row space-x-5">
+            <img src="./assets/img/Navbar/us.png" class="h-6 w-6" />
+            <p>UNITED STATES</p>
+          </div>
+          <div
+            class="flex flex-row w-[362px] justify-center items-center space-x-[62.5px]"
+          >
+            <img src="./assets/img/Navbar/left.png" class="h-6 w-6" />
+            <p>ANNOUNCEMENT GOES HERE</p>
+            <img src="./assets/img/Navbar/right.png" class="h-6 w-6" />
+          </div>
+          <div class="flex flex-row justify-center items-center gap-[8.25px]">
+            <button>ENGLISH</button>
+            <div class="bg-white w-[2px] h-[14px]"></div>
+            <button>SIGN UP</button>
+            <div class="bg-white w-[2px] h-[14px]"></div>
+            <button>LOGIN</button>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar2 Content -->
+      <div
+        class="flex flex-row justify-between items-center w-full h-[109px] bg-black/60 space-x-[229.7px] px-16"
+      >
+        <img
+          src="./assets/img/Navbar/logo.png"
+          class="w-[173.86px] h-[43.08px]"
+        />
+        <div class="flex flex-row justify-center items-center space-x-8">
+          <a>Home</a>
+          <a>Trading Academy</a>
+          <a>Affiliate Program</a>
+          <a>Memberships</a>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-4">
+          <button
+            class="flex flex-row w-[155.36px] h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 space-x-[10px]"
+          >
+            <span class="w-[6.36px] h-[6.36px] bg-[#040404] rounded-lg"></span>
+            <p class="text-[18px] font-semibold">JOIN NOW</p>
+          </button>
+          <button
+            class="flex flex-row w-[119.36px] h-[61px] text-white rounded-md justify-center items-center p-6 space-x-[10px]"
+          >
+            <span
+              class="w-[6.36px] h-[6.36px] bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] rounded-lg"
+            ></span>
+            <p class="text-[18px] font-semibold">LOGIN</p>
+          </button>
+        </div>
+      </div>
+    </header>
+    <script src="./assets/js/global.js"></script>
+  </body>
+</html>

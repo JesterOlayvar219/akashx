@@ -65,3 +65,9 @@
   background: linear-gradient(270deg, rgba(255, 255, 255, 1), rgba(7, 7, 7, 0));
   opacity: 0.1;
 }
+
+.card {
+  background: linear-gradient(201deg, rgba(29, 29, 29, 0), rgba(29, 29, 29, 1));
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0);
+}

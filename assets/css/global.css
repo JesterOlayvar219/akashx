@@ -71,3 +71,31 @@
   border-width: 2px;
   border-color: rgba(255, 255, 255, 0);
 }
+
+.alert {
+  background-image: url(../img/alerts/alert_bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.tradeAlert {
+  background-image: url(../img/alerts/tradeAlert.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+.tablet {
+  background-image: url(../img/alerts/laptop.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 100%;
+}
+
+.group {
+  background: linear-gradient(
+    200deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(153, 153, 153, 0)
+  );
+}

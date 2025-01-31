@@ -7,22 +7,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <script src="cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="./assets/css/global.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
     <title>AKASHX</title>
   </head>
   <body class="bg-black">
     <!-- Navbar -->
     <header
-      class="fixed top-0 w-full h-[157px] z-20 transition-all duration-150"
+      class="fixed top-0 w-full z-20 transition-all duration-150"
     >
       <!-- Navbar1 Content -->
-      <div class="w-full h-12 relative overflow-hidden">
+      <div class="w-full h-10 relative overflow-hidden">
         <video
           autoplay
           muted
@@ -32,61 +34,58 @@
           <source src="./assets/img/navbar.mp4" type="video/mp4" />
         </video>
         <div
-          class="flex items-center justify-between h-full px-16 py-[9.08px] text-[14px] text-white bg-black/20 backdrop-blur-sm"
+          class="relative z-10 flex items-center justify-center h-full px-16 py-[9.08px] text-[14px] text-white bg-gray-50/10 "
         >
+        <div class="flex items-center justify-between w-full max-w-[1440px]">
           <div class="flex flex-row space-x-5">
             <img src="./assets/img/Navbar/us.png" class="h-6 w-6" />
             <p>UNITED STATES</p>
           </div>
           <div
-            class="flex flex-row w-[362px] justify-center items-center space-x-[62.5px]"
+            class="flex flex-row justify-center items-center gap-16 absolute left-1/2 -translate-x-1/2"
           >
             <img src="./assets/img/Navbar/left.png" class="h-6 w-6" />
-            <p>ANNOUNCEMENT GOES HERE</p>
+            <p class="font-onest">ANNOUNCEMENT GOES HERE</p>
             <img src="./assets/img/Navbar/right.png" class="h-6 w-6" />
           </div>
-          <div class="flex flex-row justify-center items-center gap-[8.25px]">
+          <div class="flex flex-row justify-center items-center gap-2">
             <button>ENGLISH</button>
-            <div class="bg-white w-[2px] h-[14px]"></div>
+            <div class="bg-white w-0.5 h-3.5"></div>
             <button>SIGN UP</button>
-            <div class="bg-white w-[2px] h-[14px]"></div>
-            <button>LOGIN</button>
+            <div class="bg-white w-0.5 h-3.5"></div>
+            <button>LOGIN</button>  
           </div>
         </div>
       </div>
-      <!-- Navbar2 Content -->
-      <div
-        class="flex flex-row justify-between items-center w-full h-[109px] bg-black/45 backdrop-blur-[48px] border-b border-[#F6D78D]/10 space-x-[229.7px] px-16"
-      >
-        <img
-          src="./assets/img/Navbar/logo.png"
-          class="w-[173.86px] h-[43.08px]"
-        />
-        <div
-          class="flex flex-row justify-center items-center space-x-8 text-white"
-        >
-          <a>Home</a>
-          <a>Trading Academy</a>
-          <a>Affiliate Program</a>
-          <a>Memberships</a>
-        </div>
-        <div class="flex flex-row items-center justify-center gap-4">
-          <button
-            class="flex flex-row w-[155.36px] h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 gap-[10px] button-shadow"
-          >
-            <span class="w-[6.36px] h-[6.36px] bg-[#040404] rounded-lg"></span>
-            <p class="text-[18px] font-semibold">JOIN NOW</p>
-          </button>
-          <button
-            class=" flex flex-row w-[119.36px] h-[61px] bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] text-transparent bg-clip-text custom-gradient-border justify-center items-center space-x-[10px]"
-          >
-            <span
-              class="w-[6.36px] h-[6.36px] bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] rounded-lg"
-            ></span>
-            <p class="text-[18px] font-semibold">LOGIN</p>
-          </button>
-        </div>
       </div>
+      <!-- Navbar2 Content -->
+        <nav
+          class="flex justify-center w-full h-20 bg-black/45 backdrop-blur-[48px] border-b border-medium_yellow_400/10 px-16"
+        >
+        <div class="flex flex-row justify-between items-center w-full max-w-[1440px]">
+            <img
+              src="./assets/img/Navbar/logo.png"
+              alt="logo"
+            />
+            <div
+              class="flex justify-center items-center gap-8 text-white"
+            >
+              <a>Home</a>
+              <a>Trading Academy</a>
+              <a>Affiliate Program</a>
+              <a>Memberships</a>
+            </div>
+            <div class="flex flex-row items-center justify-center gap-4">
+              <button
+                class=" flex flex-row w-32 h-8 bg-gradient-to-r from-yellow-600 via-yellow-200 to-yellow-400 text-transparent bg-clip-text custom-gradient-border justify-center items-center space-x-[10px] text-normal font-semibold gap-2"
+              >
+                <span
+                  class="w-1.5 h-1.5 bg-gradient-to-r from-yellow-600 via-yellow-200 to-yellow-400 rounded-lg"
+                ></span>LOGIN
+              </button>
+            </div>
+          </div>
+        </nav>
     </header>
     <!-- End of Navbar -->
     <!-- Header -->
@@ -94,142 +93,147 @@
       <div
         class="video flex w-[1140px] h-[544.83px] rounded-tl-3xl rounded-tr-3xl  px-[19.35px] pt-[19.35px] mt-[110px]"
       >
-        <img
-          src="./assets/img/header/join.png"
-          class="w-[1101.3px] h-[526.34px]"
-        ></img>
+        <video
+          autoplay
+          muted
+          loop
+          class="w-[1101.3px] h-[526.34px] object-cover"
+        >
+          <source src="./assets/video/banner.mp4" type="video/mp4" />
+        </video>
       </div>
       <!-- Background effect (blur) -->
       <div class=" flex flex-col w-full h-[1004px] bg-black rounded-full blur-3xl absolute top-[492px]">
       </div>
       <!-- button section -->
       <div class="flex flex-col w-[796px] justify-center items-center absolute top-[481px]">  
-        <button class="flex flex-row w-[247px] h-10 rounded-full bg-[#1B1B1B]/10 border border-[#ffffff]/10 justify-between items-center px-4 py-2 gap-[10px]">
+        <button class="flex flex-row w-[247px] h-10 rounded-full bg-mborder-medium_gray_300/10 border border-[#ffffff]/10 justify-between items-center px-4 py-2 gap-[10px]">
           <img src="./assets/img/header/longGold.png" class="w-6 h-6"></img>
-          <span class="text-sm font-bold leading-[16.8px] tracking-widest text-[#EBBB29]">WELCOME TO AKASHX</span>
+          
+          <span class="text-sm font-bold leading-[16.8px] tracking-widest text-medium_yellow_500">WELCOME TO AKASHX</span>
         </button>
-        <p class="font-onest font-bold text-[80px] text-white text-center leading-[83.84px]">
-          Take your Trading To The Next Level
+        <p class="font-onest-bold font-bold text-title text-white text-center leading-none">
+          Take Your Trading To The Next Level
         </p>
         <button
-            class="flex flex-row w-[231.36px] h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 gap-[10px] button-shadow mt-8"
+            class="flex flex-row w-[231.36px] h-[61px] text-gray-bg-gray-950 rounded-md bg-gradient-to-r from-yellow-600 via-yellow-200 to-yellow-400 justify-center items-center p-6 gap-[10px] button-shadow mt-8"
           >
-            <span class="w-[6.36px] h-[6.36px] bg-[#040404] rounded-lg"></span>
-            <p class="text-[18px] font-semibold">JOIN NOW BUTTON</p>
+            <span class="w-[6.36px] h-[6.36px] bg-gray-950 rounded-lg"></span>
+            <p class="text-normal font-semibold">JOIN NOW BUTTON</p>
         </button>
       </div>
       <div></div>
     </div>
     <!-- End of Header -->
     <!--elevating multifamily management-->
-    <section class="flex flex-col w-full h-[291.87px] border border-white py-20 px-16  absolute top-[997px] gap-16 items-center">
+    <section class="flex flex-col w-full py-20 px-16 gap-16 items-center relative">
       <p class="text-white text-2xl leading-[34.78px] font-bold font-onest">Elevating multifamily Management</p>
-      <div class="flex flex-row opacity-[24%] text-white font-onest font-semibold text-[41.05px] leading-[43.02px] gap-12">
+      <div class="flex flex-row opacity-25 text-white font-onest font-semibold text-4xl gap-12 w-full overflow-x-hidden">
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/dogecoin.png" class="w-[40.71px] h-[37.19px]" />
+          <img src="./assets/img/logo/dogecoin.png"/>
           <span>Dogecoin</span>
         </div>
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/xrp.png" class="w-[38.24px] h-[31.29px]" />
+          <img src="./assets/img/logo/xrp.png" />
           <span>XRP</span>
         </div>
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/tether.png" class="w-[36.51px] h-[33.12px]"/>
+          <img src="./assets/img/logo/tether.png"/>
           <span>Tether</span>
         </div>
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/forex.png" class="w-[50.87px] h-[50.87px]" />
+          <img src="./assets/img/logo/forex.png"/>
           <span>Forex</span>
         </div>
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/ethereum.png" class="w-[26.1px] h-[42.8px]"/>
+          <img src="./assets/img/logo/ethereum.png"/>
           <span>Ethereum</span>
         </div>
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/dogecoin.png" class="w-[40.71px] h-[37.19px]" />
+          <img src="./assets/img/logo/dogecoin.png"/>
           <span>Dogecoin</span>
         </div>
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/xrp.png" class="w-[38.24px] h-[31.29px]" />
+          <img src="./assets/img/logo/xrp.png"/>
           <span>XRP</span>
         </div>
         <div class="flex flex-row items-center gap-6">
-          <img src="./assets/img/logo/tether.png" class="w-[36.51px] h-[33.12px]"/>
+          <img src="./assets/img/logo/tether.png"/>
           <span>Tether</span>
         </div>
       </div>
     </section>
     <!-- end of elevating multifamily management-->
     <!-- Trading Academy -->
-    <section class="border border-red-900 pt-28 pb-8 px-16 mt-52">
-      <div class="trading border rounded-3xl h-[724px] relative ">
-        <div class="trading-card-grad1  w-[291px] h-[570px] rounded-bl-3xl absolute bottom-0 left-0"></div>
-        <div class="trading-card-grad2  w-[291px] h-[570px] rounded-tr-3xl absolute bottom-0 left-[900px]">
-        </div>
-        <div class="flex flex-col w-[664px] justify-center items-center gap-8 absolute left-[245px] bottom-[369px]">
-          <h1 class="font-onest text-[64px] font-bold text-white leading-[67.07px]">Trading Academy</h1>
-          <p class="font-onest text-lg font-normal text-gray-400 text-center leading-[26.08px] ">Get access to over 200+ pre-recorded micro-learning videos, Choose from beginner, advanced, expert, platform tutorials, and cryptocurrencies. You can also learn directly from our Educators. 18+ languages available!</p>
-        </div>
-        <div class="flex flex-row justify-center items-center absolute bottom-[33px] gap-4">
-          <div class="card flex flex-col justify-start rounded-[10px] w-[341px] h-[270px] p-5 gap-5">
-            <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
-            <p>Beginner Academy</p>
-            <div class="w-[301px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[301px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[263.97px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <button class="bg-[#2E2922] w-[130px] h-[41px] rounded-[5px] text-[#C1954A] text-sm">Get Started</button>
+    <section class="pb-8 px-16">
+      <div class="trading border rounded-3xl h-[724px] relative flex gap-4 items-end justify-between">
+        <div class="flex flex-col items-center gap-16 overflow-hidden py-8">
+          <div class="flex flex-col max-w-2xl justify-center items-center gap-8 ">
+            <h1 class="font-onest text-[64px] font-bold text-white leading-[67.07px]">Trading Academy</h1>
+            <p class="font-onest text-lg font-normmedium_gr text-medium_gray_200 text-center leading-[26.08px] ">Get access to over 200+ pre-recorded micro-learning videos, Choose from beginner, advanced, expert, platform tutorials, and cryptocurrencies. You can also learn directly from our Educators. 18+ languages available!</p>
           </div>
-          <div class="card flex flex-col justify-start rounded-[10px] w-[341px] h-[270px] p-5 gap-5">
-            <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
-            <p>Beginner Academy</p>
-            <div class="w-[301px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[301px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[263.97px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <button class="bg-[#2E2922] w-[130px] h-[41px] rounded-[5px] text-[#C1954A] text-sm">Get Started</button>
-          </div>
-          <div class="card flex flex-col justify-start rounded-[10px] w-[341px] h-[270px] p-5 gap-5">
-            <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
-            <p>Beginner Academy</p>
-            <div class="w-[301px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[301px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[263.97px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <button class="bg-[#2E2922] w-[130px] h-[41px] rounded-[5px] text-[#C1954A] text-sm">Get Started</button>
-          </div>
-          <div class="card flex flex-col justify-start rounded-[10px] w-[119px] h-[270px] p-5 gap-5">
-            <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
-            <p>Beginner</p>
-            <div class="w-[98px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[98px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <div class="w-[98px] h-[10px] rounded-[30px] bg-[#3D3D3D]"></div>
-            <button class="bg-[#2E2922] w-[98px] h-[41px] rounded-[5px] text-[#C1954A] text-sm">Get Started</button>
-          </div>
-        </div>
-        <div class="absolute flex felx-col items-center bottom-0 right-[101px]">
-          <div class="flex flex-row gap-2 justify-center items-center absolute -top-[68px] left-[113px]">
-            <img src="./assets/img/trade/left-btn.png" class="w-[42.2px] h-[42.2px]" />
-            <div class="flex flex-row justify-center items-center px-[14px] py-[9px] gap-[17px]">
-              <div class="w-[25px] h-[6px] rounded-lg bg-gray-600">
-              </div>
-              <div class="w-[6px] h-[6px] rounded-full bg-gray-600"></div>
-              <div class="w-[6px] h-[6px] rounded-full bg-gray-600"></div>
+          <div class="flex flex-row justify-start items-center gap-4 w-full">
+            <div class="card flex flex-col justify-start rounded-[10px] w-[341px] h-[270px] p-5 gap-5">
+              <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
+              <p class="text-white">Beginner Academy</p>
+              <div class="w-[301px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[301px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[263.97px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <button class="bg-medium_gray_400 w-[130px] h-[41px] rounded-[5px] text-medium_yellow_600 text-sm">Get Started</button>
             </div>
-            <img src="./assets/img/trade/right-btn.png" class="w-[42.2px] h-[42.2px]" />
+            <div class="card flex flex-col justify-start rounded-[10px] w-[341px] h-[270px] p-5 gap-5">
+              <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
+              <p class="text-white">Beginner Academy</p>
+              <div class="w-[301px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[301px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[263.97px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <button class="bg-medium_gray_400 w-[130px] h-[41px] rounded-[5px] text-medium_yellow_600 text-sm">Get Started</button>
+            </div>
+            <div class="card flex flex-col justify-start rounded-[10px] w-[341px] h-[270px] p-5 gap-5">
+              <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
+              <p class="text-white">Beginner Academy</p>
+              <div class="w-[301px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[301px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[263.97px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <button class="bg-medium_gray_400 w-[130px] h-[41px] rounded-[5px] text-medium_yellow_600 text-sm">Get Started</button>
+            </div>
+            <div class="card flex flex-col justify-start rounded-[10px] w-[119px] h-[270px] p-5 gap-5">
+              <img src="./assets/img/trade/beginner.png" class="w-[46px] h-[46px]"/>
+              <p class="text-white">Beginner</p>
+              <div class="w-[98px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[98px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <div class="w-[98px] h-[10px] rounded-[30px] bg-medium_gray_400"></div>
+              <button class="bg-medium_gray_400 w-[98px] h-[41px] rounded-[5px] text-medium_yellow_600 text-sm">Get Started</button>
+            </div>
           </div>
-          <div>
-            <img src="./assets/img/trade/mockup.png" class="w-[436px] h-[617px]"/>
-          </div>
-
         </div>
-        <div class="absolute w-[63px] h-[570px] trading-card-grad1 bottom-0 right-0 rounded-tl-3xl rounded-br-3xl">
+        <div class="flex gap-4 items-end">
+          <div class="flex flex-col items-center relative gap-4">
+            <div class="flex flex-row gap-2 justify-center items-center">
+              <img src="./assets/img/trade/left-btn.png" class="w-[42.2px] h-[42.2px]" />
+              <div class="flex flex-row justify-center items-center px-[14px] py-[9px] gap-[17px]">
+                <div class="w-[25px] h-[6px] rounded-lg bg-gray-600">
+                </div>
+                <div class="w-[6px] h-[6px] rounded-full bg-gray-600"></div>
+                <div class="w-[6px] h-[6px] rounded-full bg-gray-600"></div>
+              </div>
+              <img src="./assets/img/trade/right-btn.png" class="w-[42.2px] h-[42.2px]" />
+            </div>
+            <div>
+              <img src="./assets/img/trade/mockup.png" class="w-[436px] h-[617px]"/>
+            </div>
+          </div>
+           <div class="w-[63px] h-[570px] trading-card-grad1 rounded-tl-3xl rounded-br-3xl">
+          </div>
         </div>
       </div>
     </section>
     <!-- end of Trading Academy-->
-    <div class="alert border border-green-600">
+    <div class="alert">
       <!-- trade alert -->
-      <section class="border border-blue-700 pt-[56.86px] px-16 pb-[100px]">
-        <div class="tradeAlert rounded-3xl border-[1px] border-[#F6D78D]/30 flex flex-row w-full pt-14 px-[70px] relative">
-          <div class="flex flex-col w-1/2 pt-[134px]">
+      <section class="pt-[56.86px] px-16 pb-[100px]">
+        <div class="tradeAlert rounded-4xl border-[1px] border-medium_yellow_400/30 flex flex-row w-full pt-14 px-[70px] relative items-end">
+          <div class="flex flex-col w-1/2 pt-32"> 
             <div class="flex flex-col gap-10">
               <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">Trade Alerts</h1>
               <div class="w-[485.97px] h-[117px] ">
@@ -238,60 +242,61 @@
             </div>
             <img src="./assets/img/alerts/Container.png" class="w-">
           </div>
-          <div class="tablet w-1/2">
-          </div>
-          <div class="absolute bottom-0 left-[660px]">
-            <img src="./assets/img/alerts/phone.png"/>
+          <div class="relative w-1/2">
+            <img src="./assets/img/alerts/laptop.png" alt="tablet" class="w-full"/>
+            <div class="absolute -top-20 left-0 -translate-x-1/2">
+              <img src="./assets/img/alerts/phone.png"/>
+            </div>
           </div>
         </div>
       </section>
       <!-- end of trade alert -->
        <!-- learn, earn, repeat -->
-      <section class="flex flex-row justify-center px-[150px] py-[120px]">
-        <div class="group flex flex-col w-[526px] h-[630px] rounded-3xl p-5 gap-[10px]">
+      <section class="flex gap-28 justify-center items-center px-16 py-[120px] max-w-6xl mx-auto">
+        <div class="group flex flex-col flex-1 rounded-3xl p-5 gap-[10px]">
           <div class="flex flex-row justify-between items-center">
             <div class="flex flex-row justify-center items-center gap-[16.13px]">
               <img src="./assets/img/alerts/logo.png" class="w-[39.13px] h-[39.13px]"/>
-              <p class="text-[22.83px] font-bold font-onest leading-[27.39px] text-[#EBBB29] tracking-widest">AKASHX</p>
+              <p class="text-[22.83px] font-bold font-onest leading-[27.39px] text-medium_yellow_500 tracking-widest">AKASHX</p>
             </div>
             <div class="flex flex-row justify-center items-center w-32 relative">
-              <img src="./assets/img/alerts/group1.png" class="w-[38.66px] h-[40px] absolute left-0">
-              <img src="./assets/img/alerts/group2.png" class="w-[38.66px] h-[40px] absolute left-[30px]">
-              <img src="./assets/img/alerts/group3.png" class="w-[38.66px] h-[40px] absolute left-[60px]">
-              <img src="./assets/img/alerts/group4.png" class="w-[38.66px] h-[40px] absolute left-[90px]">
+              <img src="./assets/img/alerts/group1.png" class="w-10 h-10 absolute left-0">
+              <img src="./assets/img/alerts/group2.png" class="w-10 h-10 absolute left-[30px]">
+              <img src="./assets/img/alerts/group3.png" class="w-10 h-10 absolute left-[60px]">
+              <img src="./assets/img/alerts/group4.png" class="w-10 h-10 absolute left-[90px]">
             </div>
           </div>
           <div>
             <img src="./assets/img/alerts/members.png"/>
           </div>
         </div>
-        <div class="flex flex-col w-[504px] py-[76px] ml-[110px] gap-[53px]">
-          <div class="flex flex-col gap-10">
+        <div class="flex flex-col flex-1 py-20 gap-12">
+          <div class="flex flex-col gap-4">
             <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">Learn. Earn. Repeat.</h1>
-            <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">
+            <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">
               Akashx is backed by one of the fastest growing and award wining companies in the world. When you decide to become an Affillate, you will join an incredible community of like minded entrepreneurs who are learning, earning, and sharing the opportunity with others.
             </p>
           </div>
           <div class="trading-card-grad1 flex flex-col rounded-tl-3xl rounded-bl-3xl p-7">
-            <div class="flex flex-row items-center gap-5">
-              <span class="w-[6.36px] h-[6.36px] bg-yellow-400 rounded-full"></span>
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Fast Payouts</p>
+            <div class="flex flex-row items-center gap-2">
+              <span class="w-1.4 h-1.5 bg-yellow-400 rounded-full"></span>
+              <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">Fast Payouts</p>
             </div>
             <div class="flex flex-row items-center gap-2">
-              <span class="w-[6.36px] h-[6.36px] bg-yellow-400 rounded-full"></span>
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Replicated Websites and Funnels</p>
+              <span class="w-1.4 h-1.5 bg-yellow-400 rounded-full"></span>
+              <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">Replicated Websites and Funnels</p>
             </div>
             <div class="flex flex-row items-center gap-2">
-              <span class="w-[6.36px] h-[6.36px] bg-yellow-400 rounded-full"></span>
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Refer 3 and Your Membership is FREE!</p>
+              <span class="w-1.4 h-1.5 bg-yellow-400 rounded-full"></span>
+              <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">Refer 3 and Your Membership is <span class="font-bold">FREE!</span></p>
             </div>
             <div class="flex flex-row items-center gap-2">
-              <span class="w-[6.36px] h-[6.36px] bg-yellow-400 rounded-full"></span>
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Earn up to $40 per referral each month</p>
+              <span class="w-1.4 h-1.5 bg-yellow-400 rounded-full"></span>
+              <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">Earn up to $40 per referral each month</p>
             </div>
             <div class="flex flex-row items-center gap-2">
-              <span class="w-[6.36px] h-[6.36px] bg-yellow-400 rounded-full"></span>
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Tracking Back Office</p>
+              <span class="w-1.4 h-1.5 bg-yellow-400 rounded-full"></span>
+              <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">Tracking Back Office</p>
             </div>
           </div>
         </div>
@@ -303,7 +308,7 @@
       <div class="flex flex-col live-card w-1/2 rounded-3xl gap-12">
         <div class="flex flex-col gap-10 pt-[72px] px-[50px]">
           <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">Live Session</h1>
-          <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Tune in to daily live sessions from Top  Educators within Forex, Crypto, Indices, and Commodities. Learn directly from our educators, ask questions, and follow proven strategies. Replay any of the live sessions from your platform and our sessions are available in multiple languages.</p>
+          <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">Tune in to daily live sessions from Top  Educators within Forex, Crypto, Indices, and Commodities. Learn directly from our educators, ask questions, and follow proven strategies. Replay any of the live sessions from your platform and our sessions are available in multiple languages.</p>
         </div>
         
         <img src="./assets/img/live/live-session.png" />
@@ -312,7 +317,7 @@
       <div class="flex flex-col live-card w-1/2  rounded-3xl gap-12">
         <div class="flex flex-col gap-10 pt-[72px] px-[50px]">
           <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">Tap To Trade</h1>
-          <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">
+          <p class="font-onest font-normmedium_gr text-medium_gray_200 text-lg leading-[26.08px]">
             Leverage our tap to trade technology to start winning in the markets. Perfect your trading skills with precise entries by tapping approve on your favorite trade setups. Compatible with MetaTrader 4, MetaTrader 5, and TradeLocker.
           </p>
         </div>          
@@ -334,27 +339,15 @@
               <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">
                 Download our Mobile App
               </h1>
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Stay connected to the community at all times by downloading the AKASHX Mobile App. Use the suite of tools to make better trading decisions and track your progress, while on the go.</p>
+              <p class="font-onest font-normal text-medium_gray_200 text-lg leading-[26.08px]">Stay connected to the community at all times by downloading the AKASHX Mobile App. Use the suite of tools to make better trading decisions and track your progress, while on the go.</p>
             </div>
-            <div class="flex flex-row items-center">
-              <button class="w-[203.95px] h-[59px] bg-black border-[2px] border-white rounded-md">
-                <div class="flex flex-row justify-center items-center px-4 py-[10.53px] gap-[14.16px]">
-                  <img src="./assets/img/live/google.png" class="w-[36.97px] h-[36.97px]"/>
-                  <div class="flex flex-row justify-start items-start">
-                    <!-- <span class="text-white font-onest text-[6px]">GET IT ON</span> -->
-                    <span class="text-white font-onest text-[20px]">Google Play</span>
-                  </div>
-                </div>
-              </button>
-              <button class="w-[203.95px] h-[59px] bg-black border-[2px] border-white rounded-md">
-                <div class="flex flex-row justify-center items-center px-4 py-[10.53px] gap-[14.16px]">
-                  <img src="./assets/img/live/apple.png" class="w-[36.97px] h-[36.97px]"/>
-                  <div class="flex flex-row justify-start items-start">
-                    <!-- <span class="text-white font-onest text-[6px]">GET IT ON</span> -->
-                    <span class="text-white font-onest text-[20px]">App Store</span>
-                  </div>
-                </div>
-              </button>
+            <div class="flex flex-row items-center gap-[14px]">
+              <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" class="w-[203.95px] h-[59px]">
+              </a>
+              <a href="https://apps.apple.com/us/app/YOUR_APP_ID" target="_blank">                
+                  <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="w-[203.95px] h-[59px]">                
+              </a>              
             </div>  
           </div>
         </div>
@@ -366,15 +359,15 @@
       <section class="flex flex-col justify-center items-center  gap-20">
         <div class="flex flex-col items-start w-4/5 gap-8">
           <button>
-            <div class="flex flex-row items-center gap-[10px] border-[1px] border-[#1b1b1b] py-2 px-4 rounded-3xl">
+            <div class="flex flex-row items-center gap-[10px] border-[1px] border-medium_gray_300 py-2 px-4 rounded-3xl">
               <img src="./assets/img/scanner/logo.png"/>
-              <span class="font-onest font-semibold text-sm leading-[16.8px] text-[#EBBB29]">our scanner</span>
+              <span class="font-onest font-semibold text-sm leading-[16.8px] text-medium_yellow_500">our scanner</span>
             </div>
           </button>
-          <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">Gain access to powerful scanners and built-in trading tools <span class="bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] text-transparent bg-clip-text">designed to help you identify the best trading opportunities in real-time.</span></h1>
+          <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">Gain access to powerful scanners and built-in trading tools <span class="bg-gradient-to-r from-yellow-600 via-yellow-200 to-yellow-400 text-transparent bg-clip-text">designed to help you identify the best trading opportunities in real-time.</span></h1>
         </div>
-        <div class="flex flex-row w-4/5">
-          <div class="w-1/3"></div>
+        <div class="flex flex-row w-4/5 max-md:flex-col">
+          <div class="w-1/3 "></div>
           <div class="flex flex-row w-2/3">
             <div class="flex flex-col justify-center items-center">
               <div class="w-[2px] h-8 bg-yellow-600"></div>
@@ -389,7 +382,6 @@
           <img src="./assets/img/live/slide1.png"/>
           <img src="./assets/img/live/slide2.png"/>
           <img src="./assets/img/live/slide2.png"/>
-          <!-- <img src="./assets/img/live/slide1.png"/> -->
           <button class="absolute bottom-40 right-16">
             <img src="./assets/img/live/nextbtn.png" />
           </button>
@@ -398,156 +390,144 @@
     </div>
     <!--end of our scanner-->
     <!-- Testimonial -->
-    <div class="testimonial">
-      <section class="flex flex-col gap-[60px] pt-[100px] mb-40" >
-        <div class="flex flex-col justify-center items-center gap-8">
-          <button>
-            <div class="flex flex-row items-center gap-[10px] border-[1px] border-[#1b1b1b] py-2 px-4 rounded-3xl">
-              <img src="./assets/img/scanner/logo.png"/>
-              <span class="font-onest font-semibold text-sm leading-[16.8px] text-[#EBBB29]">TESTIMONIAL</span>
-            </div>
-          </button>
-          <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">What People Are Saying</h1>
-          <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-        <!-- slider -->
-        <div class="flex flex-row justify-center items-center gap-4">
-          <div class="flex flex-col w-[420px] h-[419.89px] bg-[#101010] px-10 py-[60px] rounded-3xl gap-[50px]">
-            <div class="flex flex-row ">
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-            </div>
-            <div class="flex flex-col gap-[90px]">
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
-              <div class="flex flex-row gap-5 ">
-                <img src="./assets/img/testimonial/Avatar.png">
-                <div class="flex flex-col ">
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col w-[420px] h-[419.89px] bg-[#101010] px-10 py-[60px] rounded-3xl gap-[50px]">
-            <div class="flex flex-row ">
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-            </div>
-            <div class="flex flex-col gap-[90px]">
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
-              <div class="flex flex-row gap-5 ">
-                <img src="./assets/img/testimonial/Avatar.png">
-                <div class="flex flex-col ">
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <div class="flex flex-col w-[420px] h-[419.89px] bg-[#101010] px-10 py-[60px] rounded-3xl gap-[50px]">
-            <div class="flex flex-row ">
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-            </div>
-            <div class="flex flex-col gap-[90px]">
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
-              <div class="flex flex-row gap-5 ">
-                <img src="./assets/img/testimonial/Avatar.png">
-                <div class="flex flex-col ">
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <div class="flex flex-col w-[420px] h-[419.89px] bg-[#101010] px-10 py-[60px] rounded-3xl gap-[50px]">
-            <div class="flex flex-row ">
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-            </div>
-            <div class="flex flex-col gap-[90px]">
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
-              <div class="flex flex-row gap-5 ">
-                <img src="./assets/img/testimonial/Avatar.png">
-                <div class="flex flex-col ">
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <div class="flex flex-col w-[420px] h-[419.89px] bg-[#101010] px-10 py-[60px] rounded-3xl gap-[50px]">
-            <div class="flex flex-row ">
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-              <img src="./assets/img/testimonial/star.png"/>
-            </div>
-            <div class="flex flex-col gap-[90px]">
-              <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
-              <div class="flex flex-row gap-5 ">
-                <img src="./assets/img/testimonial/Avatar.png">
-                <div class="flex flex-col ">
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
-                  <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          
-        </div>
-      </section>
-    </div>
-    <!-- end of Testimonial -->
-    <!-- choose the plan -->
-    <section class="membership flex flex-col justify-center items-center pt-40 px-16 pb-[418px] gap-[60px]">
-      <div class="flex flex-col justify-center items-center gap-10">
+    <section class="video-container flex flex-col pt-100 pb-96 gap-60 " >
+      <!-- <div class="overlay"></div> -->
+      <!-- Video Background-->
+      <video class="video-background" autoplay muted loop>
+        <source src="./assets/video/planet.mp4" type="video/mp4">
+      </video>
+      <!-- top gradient --> 
+      <div class="w-full top-gradient">      
+      </div>
+      <!-- bottom gradient --> 
+      <div class="w-full bottom-gradient">      
+      </div>
+      
+      <div class="flex flex-col justify-center items-center gap-8 relative">
         <button>
-          <div class="flex flex-row items-center gap-[10px] border-[1px] border-[#1b1b1b] py-2 px-4 rounded-3xl">
+          <div class="flex flex-row items-center gap-10 border-[1px] border-medium_gray_300 py-2 px-4 rounded-3xl">
             <img src="./assets/img/scanner/logo.png"/>
-            <span class="font-onest font-semibold text-sm leading-[16.8px] text-[#EBBB29]">MEMBERSHIP</span>
+            <span class="font-onest font-semibold text-sm leading-[16.8px] text-medium_yellow_500">TESTIMONIAL</span>
           </div>
         </button>
-        <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">Choose the plan</h1>
+        <h1 class="font-onest font-bold text-white text-[64px] leading-[67.07px]">What People Are Saying</h1>
+        <p class="font-onest font-normal text-medium_gray_200 text-lg leading-[26.08px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="flex flex-row justify-center items-center gap-4">
+        <div class="flex flex-col w-1/5 h-full bg-medium_gray_100 px-10 py-[60px] rounded-3xl gap-[50px] relative">
+          <div class="flex flex-row gap-1">
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+          </div>
+          <div class="flex flex-col h-[231px] items-start ">
+            <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
+            <div class="flex flex-row gap-5 absolute bottom-14 left-10">
+              <img src="./assets/img/testimonial/Avatar.png">
+              <div class="flex flex-col ">
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-1/5 h-full bg-medium_gray_100 px-10 py-[60px] rounded-3xl gap-[50px] relative">
+          <div class="flex flex-row gap-1">
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+          </div>
+          <div class="flex flex-col h-[231px] items-start ">
+            <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
+            <div class="flex flex-row gap-5 absolute bottom-14 left-10">
+              <img src="./assets/img/testimonial/Avatar.png">
+              <div class="flex flex-col ">
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-1/5 h-full bg-medium_gray_100 px-10 py-[60px] rounded-3xl gap-[50px] relative">
+          <div class="flex flex-row gap-1">
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+          </div>
+          <div class="flex flex-col h-[231px] items-start ">
+            <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
+            <div class="flex flex-row gap-5 absolute bottom-14 left-10">
+              <img src="./assets/img/testimonial/Avatar.png">
+              <div class="flex flex-col ">
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col w-1/5 h-full bg-medium_gray_100 px-10 py-[60px] rounded-3xl gap-[50px] relative">
+          <div class="flex flex-row gap-1">
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+            <img src="./assets/img/testimonial/star.png"/>
+          </div>
+          <div class="flex flex-col h-[231px] items-start ">
+            <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">“Lorem ipsum dolor sit amet consectetur. Pellentesque rhoncus commodo gravida tellus in. Cursus purus eget nec ferme ntum pellentesque nunc.”</p>
+            <div class="flex flex-row gap-5 absolute bottom-14 left-10">
+              <img src="./assets/img/testimonial/Avatar.png">
+              <div class="flex flex-col ">
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Anna Thompson</p>
+                <p class="font-onest font-normal text-gray-400 text-lg leading-[26.08px]">Country</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+          
+      
+    </section>
+    <!-- end of Testimonial -->
+    
+    <!-- choose the plan -->
+    <section class="membership flex flex-col justify-center items-center px-16 pb-[418px] gap-16">
+      <div class="flex flex-col justify-center items-center gap-10">
+        <button>
+          <div class="flex flex-row items-center gap-[10px] border-[1px] border-neutral-900 py-2 px-4 rounded-3xl">
+            <img src="./assets/img/scanner/logo.png"/>
+            <span class="font-onest font-semibold text-sm leading-4 text-yellow-500">MEMBERSHIP</span>
+          </div>
+        </button>
+        <h1 class="font-onest font-bold text-white text-6xl leading-[67.07px]">Choose the plan</h1>
       </div>
       <div class="dropdown" >
         <select class="dropdown-select">
           <option value="0">TRADE & TRAVEL</option>
         </select>
       </div>
-      <div class="flex flex-row justify-center items-center gap-8">
-        <div class="membership-card-1  flex flex-col rounded-3xl border-[1px] px-9 py-12 gap-8">
-          <div class="flex flex-col">
-            <button class="flex flex-row w-[100px] h-[58px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 gap-[10px] button-shadow ">YEARLY</button>
-            <h3 class="font-onest font-bold text-[36px] leading-[52.16px] text-white">Annual Membership</h3>
+      <div class="flex flex-row max-md:flex-col justify-center items-center gap-8 w-full min-[1440px]:w-[calc(1440px-64px)] ">
+        <div class="membership-card-1 flex flex-col rounded-3xl border-[1px] border-medium_yellow_400/10 px-9 py-12 w-1/2 max-md:w-full gap-8">
+          <div class="flex flex-col gap-6">
+            <button class="flex w-101 h-58 font-onest text-medium_black_100 text-sm font-semibold rounded-md bg-gradient-to-r from-medium_yellow_100 via-medium_yellow_200 to-medium_yellow_300 justify-center items-center p-6 button-shadow ">YEARLY</button>
+            <h3 class="font-onest font-bold text-4xl text-white">Annual Membership</h3>
           </div>
-          <div class="h-[1px] bg-gray-500 w-full"></div>
-          <p class="text-[24px] font-bold text-[#FDF0A3]">
+          <div class="h-[1px] bg-medium_yellow_400/10 w-full"></div>
+          <p class="leading-8">
             <span class="text-[56px] font-bold  text-white">$1999</span>
-            <span class="text-3xl font-bold text-gray-400">/year</span>
+            <span class="text-3xl font-bold text-medium_gray_200">/year</span>
           </p>
           <button
-            class="flex flex-row h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 gap-[10px] button-shadow"
+            class="flex flex-row h-61 rounded-md bg-gradient-to-r from-medium_yellow_100 via-medium_yellow_200 to-medium_yellow_300 justify-center items-center p-6 gap-2 button-shadow"
           >
-            <span class="w-[6.36px] h-[6.36px] bg-[#040404] rounded-lg"></span>
-            <p class="text-[18px] font-semibold">GET STARTED NOW</p>
+            <span class="w-1.5 h-1.5 bg-medium_black_100 rounded-lg"></span>
+            <p class="text-lg text-medium_black_100 font-semibold">GET STARTED NOW</p>
           </button>
           <div class="flex justify-center">
             <button>
@@ -555,25 +535,23 @@
             </button>
           </div>
         </div>
-        <div class="flex flex-col rounded-3xl border-[1px] bg-[#101010] px-9 py-12 gap-8">
-          <div class="flex flex-col">
+        <div class="bg-medium_gray_100 flex flex-col rounded-3xl border-[1px] border-medium_yellow_400/10  px-9 py-12 w-1/2 max-md:w-full gap-8">
+          <div class="flex flex-col gap-6">
             <button
-            class=" flex flex-row w-[119.36px] h-[61px] bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] text-transparent bg-clip-text border rounded-3xl custom-gradient-border justify-center items-center space-x-[10px]"
-          >
-            <p class="text-[18px] font-semibold">MONTHLY</p>
-          </button>
-            <h3 class="font-onest font-bold text-[36px] leading-[52.16px] text-white">Trade & Travel</h3>
+            class=" flex w-115 h-58 font-onest text-sm font-semibold rounded-md bg-gradient-to-r from-medium_yellow_100 via-medium_yellow_200 to-medium_yellow_300 text-transparent bg-clip-text border custom-gradient-border justify-center items-center p-6" 
+          >MONTHLY</button>
+            <h3 class="font-onest font-bold text-4xl text-white">Trade & Travel</h3>
           </div>
-          <div class="h-[1px] bg-gray-500 w-full"></div>
-          <p class="text-[24px] font-bold text-[#FDF0A3]">
+          <div class="h-[1px] bg-medium_yellow_400/10 w-full"></div>
+          <p class="leading-8">
             <span class="text-[56px] font-bold  text-white">$189</span>
-            <span class="text-3xl font-bold text-gray-400">/month</span>
+            <span class="text-3xl font-bold text-medium_gray_200">/month</span>
           </p>
           <button
-            class="flex flex-row h-[61px] text-[#040404] rounded-md bg-gradient-to-r from-[#D09C27] via-[#FDF0A3] to-[#E0B84E] justify-center items-center p-6 gap-[10px] button-shadow"
+            class="flex flex-row h-61 rounded-md bg-gradient-to-r from-medium_yellow_100 via-medium_yellow_200 to-medium_yellow_300 justify-center items-center p-6 gap-2 button-shadow"
           >
-            <span class="w-[6.36px] h-[6.36px] bg-[#040404] rounded-lg"></span>
-            <p class="text-[18px] font-semibold">GET STARTED NOW</p>
+            <span class="w-1.5 h-1.5 bg-medium_black_100 rounded-lg"></span>
+            <p class="text-lg text-medium_black_100 font-semibold">GET STARTED NOW</p>
           </button>
           <div class="flex justify-center">
             <button>
@@ -703,4 +681,4 @@
     <!-- end of footer-->
     <script src="./assets/js/global.js"></script>
   </body>
-</html>
+</html> 

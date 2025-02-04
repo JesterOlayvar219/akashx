@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>AKASHX | Merch</title>
+  </head>
+  <body class="bg-black">
+    <!-- Navbar -->
+    <header class="fixed top-0 w-full z-20 transition-all duration-150">
+      <!-- Navbar1 Content -->
+      <div
+        class="relative z-10 flex items-center justify-center w-full h-10 px-4 md:px-16 py-[9.08px] font-onest-regular font-bold text-sm leading-medium_0 text-white bg-medium_black_200"
+      >
+        <div class="flex items-center justify-between w-full max-w-[1440px]">
+          <div class="flex flex-row space-x-5 items-center">
+            <img src="./assets/img/Navbar/us.png" class="h-6 w-6" />
+            <p class="max-md:hidden">UNITED STATES</p>
+          </div>
+          <div
+            class="max-lg:hidden flex flex-row justify-center items-center gap-16 absolute left-1/2 -translate-x-1/2"
+          >
+            <img src="./assets/img/Navbar/left.png" class="h-6 w-6" />
+            <p>ANNOUNCEMENT GOES HERE</p>
+            <img src="./assets/img/Navbar/right.png" class="h-6 w-6" />
+          </div>
+          <div class="flex flex-row justify-center items-center gap-2">
+            <button class="max-sm:hidden">ENGLISH</button>
+            <div class="max-sm:hidden bg-white w-0.5 h-3.5"></div>
+            <button>SIGN UP</button>
+            <div class="bg-white w-0.5 h-3.5"></div>
+            <button>LOGIN</button>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar2 Content -->
+      <!-- Hidden checkbox to control mobile menu state -->
+      <input type="checkbox" id="nav-toggle" class="hidden peer" />
+      <nav
+        class="flex justify-center w-full h-20 bg-black/45 backdrop-blur-[20px] border-b border-medium_yellow_400/10 px-4 md:px-16"
+      >
+        <div
+          class="flex flex-row justify-between items-center w-full max-w-[1440px]"
+        >
+          <!-- Logo -->
+          <img
+            src="./assets/img/Navbar/logo.png"
+            alt="logo"
+            class="h-8 w-auto"
+          />
+          <!-- Hamburger Menu Button (Mobile Only) -->
+          <button id="menu-toggle" class="lg:hidden text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+
+          <!-- Navigation Links -->
+          <div
+            id="mobile-menu"
+            class="hidden lg:flex absolute lg:relative top-20 lg:top-0 left-0 w-full lg:w-auto flex-col lg:flex-row justify-start lg:justify-center items-center gap-4 lg:gap-8 font-onest-regular font-normal text-base leading-medium_1 text-white bg-black/45 lg:bg-transparent backdrop-blur-[20px] lg:backdrop-blur-none p-4 lg:p-0 z-50"
+          >
+            <a
+              href="#"
+              class="w-full lg:w-auto text-center py-2 lg:py-0 hover:text-yellow-400 transition-colors"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="w-full lg:w-auto text-center py-2 lg:py-0 hover:text-yellow-400 transition-colors"
+              >Academy</a
+            >
+            <a
+              href="#"
+              class="w-full lg:w-auto text-center py-2 lg:py-0 hover:text-yellow-400 transition-colors"
+              >Sessions</a
+            >
+            <a
+              href="#"
+              class="w-full lg:w-auto text-center py-2 lg:py-0 hover:text-yellow-400 transition-colors"
+              >Trade Alerts</a
+            >
+            <a
+              href="#"
+              class="w-full lg:w-auto text-center py-2 lg:py-0 hover:text-yellow-400 transition-colors"
+              >Tap to Trade</a
+            >
+            <a
+              href="#"
+              class="w-full lg:w-auto text-center py-2 lg:py-0 hover:text-yellow-400 transition-colors"
+              >Scanners</a
+            >
+            <a
+              href="#"
+              class="w-full lg:w-auto text-center py-2 lg:py-0 hover:text-yellow-400 transition-colors"
+              >Memberships</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navbar -->
+    <!-- Banner -->
+    <div class="banner flex justify-center py-36">
+      <div class="flex flex-col justify-center items-center gap-8">
+        <p
+          class="font-onest-bold font-bold text-title max-md:text-4xl max-lg:text-5xl max-sm:text-3xl text-white text-center leading-medium_10"
+        >
+          Merchandise
+        </p>
+        <div
+          class="flex flex-row justify-center items-center font-onest-regular font-normal text-base leading-6 text-white gap-2"
+        >
+          <span>Home</span>
+          <span>/</span>
+          <span>Shop</span>
+        </div>
+      </div>
+    </div>
+    <!-- End of Banner -->
+    <!-- category -->
+    <section
+      class="category rounded-tr-[42px] rounded-tl-[42px] flex w-full justify-center bg-black px-16 py-[60px] -mt-8 max-xl:px-8 max-xl:py-8 max-md:px-4 max-md:py-4"
+    >
+      <!-- <div class="flex flex-row gap-8 w-full max-w-[1440px]">        
+      </div> -->
+      <div
+        class="flex flex-col md:flex-row gap-16 w-full max-w-[1440px] max-xl:gap-10 max-lg:gap-5"
+      >
+        <!-- Filters Sidebar -->
+        <div class="w-full md:w-1/4 flex flex-col flex-shrink-0 gap-9">
+          <h2
+            class="font-onest-regular font-normal text-white text-2xl leading-9"
+          >
+            Filters (3)
+          </h2>
+          <div class="flex flex-col gap-6">
+            <div class="flex justify-between items-center">
+              <h2
+                class="font-onest-regular font-normal text-white text-lg leading-6"
+              >
+                Applied Filters
+              </h2>
+              <button
+                class="font-normal text-yellow-500 text-base leading-6 hover:text-yellow-400"
+              >
+                Clear all
+              </button>
+            </div>
+
+            <!-- Applied Filters -->
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="border border-yellow-500 bg-transparent px-3 py-1 rounded-lg flex items-center gap-2 text-lg text-white"
+              >
+                All <button class="text-yellow-500">&times;</button>
+              </span>
+              <span
+                class="border border-yellow-500 bg-transparent px-3 py-1 rounded-lg flex items-center gap-2 text-lg text-white"
+              >
+                Gummies <button class="text-yellow-500">&times;</button>
+              </span>
+              <span
+                class="border border-yellow-500 bg-transparent px-3 py-1 rounded-lg flex items-center gap-2 text-lg text-white"
+              >
+                Capsule <button class="text-yellow-500">&times;</button>
+              </span>
+            </div>
+          </div>
+
+          <!-- Filter Categories -->
+          <div class="flex flex-col gap-5">
+            <div class="flex flex-col">
+              <button
+                class="flex flex-row w-full justify-between items-center py-4 border-t-2 border-medium_gray_400"
+              >
+                <h3
+                  class="font-onest-regular font-normal text-lg text-white leading-6"
+                >
+                  Clothing
+                </h3>
+                <svg
+                  id="clothing-arrow"
+                  class="w-4 h-4 transform text-white transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <label class="flex flex-row justify-between py-[5px]">
+                <div class="flex flex-row gap-2">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox w-[18px] h-[18px] text-yellow-500"
+                  />
+                  <span
+                    class="font-onest-regular font-normal text-lg text-white leading-6"
+                    >Clothing</span
+                  >
+                </div>
+                <svg
+                  id="clothing-arrow"
+                  class="w-4 h-4 transform text-white transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </label>
+              <div class="space-y-2 ml-7">
+                <label class="flex items-center gap-2 py-2">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox w-[18px] h-[18px] text-yellow-500"
+                  />
+                  <span
+                    class="font-onest-regular font-normal text-lg text-white leading-6"
+                    >T-Shirt</span
+                  >
+                </label>
+                <label class="flex items-center gap-2 py-2">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox w-[18px] h-[18px] text-yellow-500"
+                  />
+                  <span
+                    class="font-onest-regular font-normal text-lg text-white leading-6"
+                    >Hoodies</span
+                  >
+                </label>
+                <label class="flex items-center gap-2 py-2">
+                  <input
+                    type="checkbox"
+                    class="form-checkbox w-[18px] h-[18px] text-yellow-500"
+                  />
+                  <span
+                    class="font-onest-regular font-normal text-lg text-white leading-6"
+                    >Hats</span
+                  >
+                </label>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <button
+                class="flex flex-row w-full justify-between items-center py-4 border-t-2 border-medium_gray_400"
+              >
+                <h3
+                  class="font-onest-regular font-normal text-lg text-white leading-6"
+                >
+                  Accessories
+                </h3>
+                <svg
+                  id="clothing-arrow"
+                  class="w-4 h-4 transform text-white transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <label class="flex items-center gap-2 py-2">
+                <input
+                  type="checkbox"
+                  class="form-checkbox w-[18px] h-[18px] text-yellow-500"
+                />
+                <span
+                  class="font-onest-regular font-normal text-lg text-white leading-6"
+                  >Accessories</span
+                >
+              </label>
+            </div>
+            <div class="w-full border-t-2 border-medium_gray_400"></div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="flex-1 flex w-full md:w-3/4 flex-col gap-16">
+          <div class="flex w-full justify-end">
+            <div class="flex flex-row justify-center items-center gap-3">
+              <span class="font-sans font-normal text-lg leading-6 text-white"
+                >Sort by:</span
+              >
+              <div class="dropdownProduct">
+                <select class="dropdownProduct-select">
+                  <option value="0">DEFAULT</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <!-- Product grid -->
+          <div
+            class="flex flex-col border-[1px] border-medium_gray_200 border-dashed"
+          >
+            <div
+              id="productGrid"
+              class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-2.5"
+            >
+              <!-- Product Card Template -->
+              <!-- <div class="flex flex-col gap-4">
+                <div class="bg-gray-900 rounded-3xl overflow-hidden">
+                  <img
+                    src="./assets/img/merch/man.png"
+                    alt="Product"
+                    class="w-full h-auto"
+                  />
+                </div>
+                <div class="flex flex-col justify-start gap-5">
+                  <div class="flex flex-col flex-1 gap-2.5">
+                    <span class="font-onest-regular font-medium text-[12px] text-white"
+                      >MERCH</span
+                    >
+                    <h3
+                      class="font-onest-regular font-bold text-white text-2xl leading-6"
+                    >
+                      Akasha Shirt SM
+                    </h3>
+                    <div class="flex items-center">
+                      <span class="text-medium_yellow_100">★★★★★</span>
+                      <span
+                        class="font-onest-regular font-normal text-white text-sm ml-1"
+                        >(5)</span
+                      >
+                    </div>
+                  </div>
+                  <span
+                    class="font-onest-regular font-normal text-base text-white leading-5"
+                    >$38.00 USD</span
+                  >
+                  <button
+                    class="bg-black border border-yellow-500 text-yellow-500 px-6 py-4 rounded-full hover:bg-yellow-500 hover:text-black font-onest-regular font-normal text-lg leading-7 transition-colors"
+                  >
+                    ADD TO CART
+                  </button>
+                </div>
+              </div> -->
+              <!-- Repeat product cards as needed -->
+            </div>
+            <!-- Pagination -->
+            <div
+              class="flex flex-col justify-center items-center py-10 px-2 gap-8"
+            >
+              <span
+                class="font-onest-regular font-normal text-sm leading-5 text-white100"
+                >You’re viewing 1-32 of 32 products</span
+              >
+              <div class="flex flex-row justify-center items-center gap-2">
+                <a href="#" class="pagenation active">1</a>
+                <a href="#" class="pagenation">2</a>
+                <a href="#" class="pagenation">3</a>
+                <a
+                  href="#"
+                  class="font-onest-regular font-normal text-sm leading-5 text-gray600 border-[1px] border-gray600 px-2 py-[6px] bg-transparent hover:text-medium_yellow_100 hover:border-medium_yellow_100 rounded"
+                >
+                  <svg
+                    id="clothing-arrow"
+                    class="w-4 h-4 transform transition-transform duration-200"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of category -->
+    <!--Newsletter-->
+    <div class="planetVideo-container">
+      <!-- Video Background-->
+      <video class="planetVideo-background" autoplay muted loop>
+        <source src="./assets/video/planet2.mp4" type="video/mp4" />
+      </video>
+      <!--top gradient-->
+      <div class="w-full planet-gradient-top"></div>
+      <div class="flex w-full px-16 justify-center max-md:px-4 absolute top-0">
+        <section class="w-full max-w-[1440px] relative min-[320px]:pt-2 pt-16">
+          <div class="flex w-full justify-center">
+            <div
+              class="flex flex-col items-center justify-center min-[320px]:gap-2 md:gap-6 lg:gap-9 2xl:gap-14 md:w-[90%] lg:w-[58%] 2xl:w-1/2"
+            >
+              <div
+                class="flex flex-col items-center justify-center min-[320px]:gap-[2px] md:gap-3 gap-9"
+              >
+                <button>
+                  <div
+                    class="flex flex-row items-center gap-2 border-[1px] border-medium_gray_300 py-2 px-4 rounded-3xl"
+                  >
+                    <img src="./assets/img/scanner/logo.png" />
+                    <span
+                      class="font-onest-regular font-semibold text-sm leading-[16.8px] text-medium_yellow_500"
+                      >NEWSLETTER</span
+                    >
+                  </div>
+                </button>
+                <h1
+                  class="font-onest-regular font-bold text-white text-[64px] leading-[67.07px] xl:text-6xl max-md:text-4xl max-lg:text-4xl max-sm:text-3xl text-center"
+                >
+                  Get Tapped into Our
+                  <span
+                    class="bg-gradient-to-r from-yellow-600 via-yellow-200 to-yellow-400 text-transparent bg-clip-text"
+                    >Mailing List</span
+                  >
+                </h1>
+                <p
+                  class="font-onest-regular font-normal text-gray-400 text-lg leading-[26.08px] text-center"
+                >
+                  Lorem ipsum dolor sit amet consectetur. Ipsum posuere quisque
+                  sit cursus facilisis. Congue semper sit mattis diam
+                  suspendisse tristique.
+                </p>
+              </div>
+              <input
+                type="email"
+                class="w-full h-[81px] rounded-xl font-onest-regular font-normal text-2xl leading-9 px-10"
+                placeholder="Enter your email"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--end of Newsletter-->
+    <!-- footer -->
+    <footer class="footer">
+      <div
+        class="bg-gradient-overlay min-[375px]:-mt-20 md:-mt-[200px] lg:-mt-[260px] min-[1440px]:-mt-[362px] min-[1600px]:-mt-[500px]"
+      >
+        <div class="flex w-full px-16 justify-center max-lg:px-8 max-md:px-4">
+          <div
+            class="flex flex-col py-20 gap-20 w-full max-w-[1440px] max-lg:py-10"
+          >
+            <div
+              class="w-full max-w-[1440px] flex flex-row max-lg:flex-col max-lg:space-y-7"
+            >
+              <div
+                class="flex flex-col w-1/2 max-lg:w-full gap-8 pr-28 max-lg:pr-0"
+              >
+                <div class="flex flex-row">
+                  <img src="./assets/img/footer/goldLogo.png" />
+                </div>
+                <div class="flex">
+                  <p
+                    class="font-onest-regular font-normal text-gray-400 text-lg leading-6"
+                  >
+                    <span
+                      class="font-onest-regular font-bold text-white text-lg leading-6"
+                      >Risk Disclaimer:</span
+                    >
+                    Trading Futures, Options on Futures and FOREX involves
+                    substantial risk of loss and is not suitable for all
+                    investors. Opinions, market data, and recommendations are
+                    subject to change without notice. Past performance is not
+                    indicative of future results.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="flex flex-row w-1/2 justify-center max-lg:w-full max-sm:flex-col max-sm:gap-10 max-sm:items-start"
+              >
+                <div class="flex flex-col w-1/3 gap-8 max-sm:items-start">
+                  <p
+                    class="font-onest-regular font-bold text-lg text-white leading-7"
+                  >
+                    Navigation
+                  </p>
+                  <div class="flex flex-col max-sm:items-start">
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Home</a
+                    >
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Academy</a
+                    >
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Sessions</a
+                    >
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Trade Alerts</a
+                    >
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Scanners</a
+                    >
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Pricing</a
+                    >
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Login / Join</a
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-col w-1/3 gap-8 max-sm:items-start">
+                  <p
+                    class="font-onest-regular font-bold text-lg text-white leading-7"
+                  >
+                    Company
+                  </p>
+                  <div class="flex flex-col max-sm:items-start">
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Terms of Service</a
+                    >
+                    <a class="font-onest-regular font-normal text-gray-400"
+                      >Privacy Policy</a
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-col w-1/3 gap-8 max-sm:items-start">
+                  <p
+                    class="font-onest-regular font-bold text-lg text-white leading-7"
+                  >
+                    Connect
+                  </p>
+                  <div
+                    class="flex flex-row gap-4 max-md:gap-2 max-sm:items-center"
+                  >
+                    <a>
+                      <div
+                        class="w-8 h-8 border-2 rounded-full border-white flex justify-center items-center"
+                      >
+                        <i class="text-white fa fa-facebook-f"></i>
+                      </div>
+                    </a>
+                    <a>
+                      <div
+                        class="w-8 h-8 border-2 rounded-full border-white flex justify-center items-center"
+                      >
+                        <i class="text-white fa fa-instagram"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-[1440px] flex flex-col pt-14 gap-10 border-t-[1px] border-gray-100"
+            >
+              <p
+                class="font-onest-regular font-bold text-sm text-gray-400 leading-5"
+              >
+                Disclaimer: All content and information provided on this website
+                are for educational and informational purposes only,
+                specifically relating to trading in financial markets. They
+                should not be construed as specific investment recommendations,
+                endorsements, or solicitations to buy or sell securities or any
+                other investment instruments. It’s emphasized that trading in
+                financial markets carries inherent risks, and potential traders
+                are advised not to invest more than they can afford to lose.
+              </p>
+              <p
+                class="font-onest-regular font-bold text-sm text-gray-400 leading-5"
+              >
+                Akashx does not provide direct broker services, trading
+                services, or hold custody of any investor funds. The Company is
+                also not a licensed investment service provider and does not
+                offer any services that would fall under such categorization.
+                Any references to “trading” or “trader” on our platform should
+                be understood as notional or fictitious trading on demo
+                accounts. This website is operated under the jurisdiction of
+                applicable local laws and regulations. Akashxchange, LLC assumes
+                no responsibility or liability for any misinterpretation,
+                misuse, or reliance on the information provided on this website.
+              </p>
+              <p
+                class="font-onest-regular font-bold text-sm text-gray-400 leading-5"
+              >
+                Trading Futures, Options on Futures and FOREX involves
+                substantial risk of loss and is not suitable for all investors.
+                Opinions, market data, and recommendations are subject to change
+                without notice. Past performance is not indicative of future
+                results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer-->
+    <script src="./assets/js/global.js"></script>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const mobileMenu = document.getElementById("mobile-menu");
+          const isHidden = mobileMenu.classList.contains("hidden");
+
+          if (isHidden) {
+            mobileMenu.classList.remove("hidden");
+            mobileMenu.classList.add("flex");
+          } else {
+            mobileMenu.classList.add("hidden");
+            mobileMenu.classList.remove("flex");
+          }
+        });
+
+      const products = Array(16)
+        .fill(null)
+        .map((_, index) => ({
+          id: index + 1,
+          brand: "MERCH",
+          name: "Akasha Shirt SM",
+          rating: 5,
+          reviews: 5,
+          price: 38.0,
+          image: "./assets/img/merch/man.png",
+        }));
+
+      function renderProducts() {
+        const productGrid = document.getElementById("productGrid");
+        const productsHTML = products
+          .map(
+            (product) => `
+                <div class="flex flex-col gap-4">
+                    <div class="bg-gray-900 rounded-3xl overflow-hidden">
+                        <img
+                            src="${product.image}"
+                            alt="${product.name}"
+                            class="w-full h-auto"
+                        />
+                    </div>
+                    <div class="flex flex-col justify-start gap-5">
+                        <div class="flex flex-col flex-1 gap-2.5">
+                            <span class="font-onest-regular font-medium text-[12px] text-white">
+                                ${product.brand}
+                            </span>
+                            <h3 class="font-onest-regular font-bold text-white text-2xl leading-6">
+                                ${product.name}
+                            </h3>
+                            <div class="flex items-center">
+                                <span class="text-medium_yellow_100">★★★★★</span>
+                                <span class="font-onest-regular font-normal text-white text-sm ml-1">
+                                    (${product.reviews})
+                                </span>
+                            </div>
+                        </div>
+                        <span class="font-onest-regular font-normal text-base text-white leading-5">
+                            $${product.price.toFixed(2)} USD
+                        </span>
+                        <button class="bg-black border border-yellow-500 text-yellow-500 px-6 py-4 rounded-full hover:bg-yellow-500 hover:text-black font-onest-regular font-normal text-lg leading-7 transition-colors">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            `
+          )
+          .join("");
+
+        productGrid.innerHTML = productsHTML;
+      }
+
+      // Render products immediately when the page loads
+      document.addEventListener("DOMContentLoaded", renderProducts);
+    </script>
+  </body>
+</html>

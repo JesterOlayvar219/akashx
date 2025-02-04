@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./*.{html,js}", "./assets/**/*.{html,js,css}"],
   theme: {
     extend: {
       fontFamily: {
-        onest: ["Onest", "sans-serif"],
+        "onest-regular": ["Onest-Regular"],
         "onest-bold": ["Onest-Bold", "sans-serif"],
+        "sfprodisplay-medium": ["SFProDisplayMedium", "system-ui", "sans-serif"],
       },
       fontSize: {
         normal: "18px",
@@ -19,18 +20,22 @@ module.exports = {
       },
       colors: {
         medium_black_100: "#040404",
-
+        medium_black_200: "#141313",
         medium_gray_100: "#101010",
         medium_gray_200: "#A3A3A3",
         medium_gray_300: "#1b1b1b",
         medium_gray_400: "#3D3D3D",
         medim_gray_500: "#2E2922",
+        gray600: "#525252",
+        gray700: "#1D1B1B",
+        gray800: "#151414",
         medium_yellow_100: "#D09C27",
         medium_yellow_200: "#FDF0A3",
         medium_yellow_300: "#E0B84E",
         medium_yellow_400: "#F6D78D",
         medium_yellow_500: "#EBBB29",
         medium_yellow_600: "#C1954A",
+        white100: "#F5F5F5",
       },
       spacing: {
         // 10: "10px",
@@ -42,6 +47,23 @@ module.exports = {
         100: "100px",
         101: "101px",
         115: "115px",
+      },
+      lineHeight: {
+        medium_0: "16.8px",
+        medium_1: "23.18px",
+        medium_10: "83.84px",
+      },
+      screens: {
+        sssm: "325px",
+        ssm: "425px",
+        md: "768px",
+        lg: "1024px",
+        sxl: "1200px",
+        xl: "1280px",
+        xxl: "1440px",
+        "2xl": "1536",
+        "3xl": "1600px",
+        desktop: "1920px",
       },
     },
   },
